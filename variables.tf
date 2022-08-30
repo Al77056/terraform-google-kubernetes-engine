@@ -427,6 +427,12 @@ variable "initial_node_count" {
   default     = 0
 }
 
+variable "machine_type" {
+  type        = string
+  description = "The machine type to use in the cluster's default node pool."
+  default     = ""
+}
+
 variable "remove_default_node_pool" {
   type        = bool
   description = "Remove default node pool while setting up the cluster"
